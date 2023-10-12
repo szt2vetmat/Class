@@ -1,26 +1,25 @@
 public class Date {
-    private int _year;
-    private int _month;
-    private int _day;
+    private int year;
+    private int month;
+    private int day;
 
-    public Date(int _year, int _month, int _day) {
-        this._year = _year;
-        this._month = _month;
-        this._day = _day;
+    public Date(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
     }
 
     public boolean isCorrectDate() {
-        if (1 <= _month && _month <= 12) {
-            if (_month == 1 || _month == 3 || _month == 5 || _month == 7 || _month == 8 || _month == 10 || _month == 12) {
-                return (1 <= _day && _day <= 31);
-            } else if (_month == 4 || _month == 6 || _month == 9 || _month == 11) {
-                return (1 <= _day && _day <= 30);
+        if (1 <= month && month <= 12) {
+            if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+                return (1 <= day && day <= 31);
+            } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+                return (1 <= day && day <= 30);
             } else {
-                // Február esetén szökőév ellenőrzése
-                if ((_year % 4 == 0 && _year % 100 != 0) || (_year % 400 == 0)) {
-                    return (1 <= _day && _day <= 29);
+                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                    return (1 <= day && day <= 29);
                 } else {
-                    return (1 <= _day && _day <= 28);
+                    return (1 <= day && day <= 28);
                 }
             }
         }
@@ -28,36 +27,36 @@ public class Date {
     }
 
     public void printDate() {
-        System.out.println("Dátum: " + _year + "." + String.format("%02d", _month) + "." + String.format("%02d", _day));
+        System.out.println("Dátum: " + year + "." + String.format("%02d", month) + "." + String.format("%02d", day));
     }
 
-
-    public int get_year() {
-        return _year;
+    public int getYear() {
+        return year;
     }
 
-    public int get_month() {
-        return _month;
+    public int getMonth() {
+        return month;
     }
 
-    public int get_day() {
-        return _day;
+    public int getDay() {
+        return day;
     }
 
-    public void set_year(int _year) {
-        this._year = _year;
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    public void set_month(int _month) {
-        this._month = _month;
+    public void setMonth(int month) {
+        this.month = month;
     }
 
-    public void set_day(int _day) {
-        this._day = _day;
+    public void setDay(int day) {
+        this.day = day;
     }
 
     public static void main(String[] args) {
-        Date date = new Date(2023, 5, 30);
-        date.printDate();
+        Date date1 = new Date(2023, 5, 30);
+        date1.printDate();
+
     }
 }

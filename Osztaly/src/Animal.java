@@ -1,42 +1,42 @@
 public class Animal {
-    private int _numberOfLegs;
-    private int _numberOfEyes;
-    private String _name;
+    private int numberOfLegs;
+    private int numberOfEyes;
+    private String name;
 
-    public Animal(int _numberOfLegs, int _numberOfEyes, String _name) {
-        this._numberOfLegs = _numberOfLegs;
-        this._numberOfEyes = _numberOfEyes;
-        this._name = _name;
+    public Animal(int numberOfLegs, int numberOfEyes, String name) {
+        this.numberOfLegs = numberOfLegs;
+        this.numberOfEyes = numberOfEyes;
+        this.name = name;
     }
 
     public void printAnimal() {
-        System.out.println("Név: " + _name);
-        System.out.println("Lábak száma: " + _numberOfLegs);
-        System.out.println("Szemek száma: " + _numberOfEyes);
+        System.out.println("Név: " + name);
+        System.out.println("Lábak száma: " + numberOfLegs);
+        System.out.println("Szemek száma: " + numberOfEyes);
     }
 
-    public int get_numberOfLegs() {
-        return _numberOfLegs;
+    public int getNumberOfLegs() {
+        return numberOfLegs;
     }
 
-    public int get_numberOfEyes() {
-        return _numberOfEyes;
+    public int getNumberOfEyes() {
+        return numberOfEyes;
     }
 
-    public String get_name() {
-        return _name;
+    public String getName() {
+        return name;
     }
 
-    public void set_numberOfLegs(int _numberOfLegs) {
-        this._numberOfLegs = _numberOfLegs;
+    public void setNumberOfLegs(int numberOfLegs) {
+        this.numberOfLegs = numberOfLegs;
     }
 
-    public void set_numberOfEyes(int _numberOfEyes) {
-        this._numberOfEyes = _numberOfEyes;
+    public void setNumberOfEyes(int numberOfEyes) {
+        this.numberOfEyes = numberOfEyes;
     }
 
-    public void set_name(String _name) {
-        this._name = _name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public static void main(String[] args) {

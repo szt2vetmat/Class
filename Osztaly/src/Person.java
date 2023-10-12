@@ -1,67 +1,66 @@
 public class Person {
-    private String _firstName;
-    private String _lastName;
-    private int _birthYear;
-    private int _birthMonth;
-    private int _birthDay;
+    private String firstName;
+    private String lastName;
+    private int birthYear;
+    private int birthMonth;
+    private int birthDay;
 
-    public Person(String _firstName, String _lastName, int _birthYear, int _birthMonth, int _birthDay) {
-        this._firstName = _firstName;
-        this._lastName = _lastName;
-        this._birthYear = _birthYear;
-        this._birthMonth = _birthMonth;
-        this._birthDay = _birthDay;
+    public Person(String firstName, String lastName, int birthYear, int birthMonth, int birthDay) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthYear = birthYear;
+        this.birthMonth = birthMonth;
+        this.birthDay = birthDay;
     }
 
     public void printPerson() {
-        System.out.println("Vezetéknév: " + _lastName);
-        System.out.println("Utónév: " + _firstName);
-        System.out.println("Születési idő: " + _birthYear + "." + String.format("%02d", _birthMonth) + "." + String.format("%02d", _birthDay));
+        System.out.println("Vezetéknév: " + lastName);
+        System.out.println("Utónév: " + firstName);
+        System.out.println("Születési idő: " + birthYear + "." + String.format("%02d", birthMonth) + "." + String.format("%02d", birthDay));
     }
 
-
-    public String get_firstName() {
-        return _firstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String get_lastName() {
-        return _lastName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public int get_birthYear() {
-        return _birthYear;
+    public int getBirthYear() {
+        return birthYear;
     }
 
-    public int get_birthMonth() {
-        return _birthMonth;
+    public int getBirthMonth() {
+        return birthMonth;
     }
 
-    public int get_birthDay() {
-        return _birthDay;
+    public int getBirthDay() {
+        return birthDay;
     }
 
-    public void set_firstName(String _firstName) {
-        this._firstName = _firstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void set_lastName(String _lastName) {
-        this._lastName = _lastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void set_birthYear(int _birthYear) {
-        this._birthYear = _birthYear;
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
     }
 
-    public void set_birthMonth(int _birthMonth) {
-        this._birthMonth = _birthMonth;
+    public void setBirthMonth(int birthMonth) {
+        this.birthMonth = birthMonth;
     }
 
-    public void set_birthDay(int _birthDay) {
-        this._birthDay = _birthDay;
+    public void setBirthDay(int birthDay) {
+        this.birthDay = birthDay;
     }
 
     public static void main(String[] args) {
-        Person person = new Person("Frigyes", "Nagy", 1998, 1, 24);
+        Person person = new Person("John", "Doe", 1990, 5, 15);
         person.printPerson();
     }
 }
