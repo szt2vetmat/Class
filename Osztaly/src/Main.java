@@ -25,7 +25,13 @@ public class Main {
         date3.printDate();
 
 
-
+        //Animal
+        Animal animal1 = new Animal(4, 2, "Kutya");
+        animal1.printAnimal();
+        animal1.setNumberOfLegs(2);
+        animal1.setNumberOfEyes(1);
+        animal1.setName("Macska");
+        animal1.printAnimal();
 
 
     }
