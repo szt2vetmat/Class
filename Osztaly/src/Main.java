@@ -12,6 +12,21 @@ public class Main {
         person2.printPerson();
 
 
+        //Date
+        Date date1 = new Date(2023, 5, 30);
+        date1.printDate();
+        Date date2 = new Date(2022, 2, 30);
+        if (date2.isCorrectDate()) {
+            date2.printDate();
+        } else {
+            System.out.println("Helytelen dátum.");
+        }
+        Date date3 = new Date(2021, 6, 1);
+        date3.printDate();
+
+
+
+
 
     }
 }
